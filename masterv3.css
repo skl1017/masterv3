@@ -181,13 +181,20 @@
   iframe{
     width: 85%;
     border-width: 0px;
+    frameborder:0;
   }
 
+
+    
+  /* Footer*/
 
 
   footer{
     background-color: rgba(13,6,37);
     height: 170px;
+    display: flex;
+    align-items: center;
+
   }
   header a:hover{
     color: rgb(126,98,235);
@@ -202,15 +209,31 @@
     color: black;
   }
 
+.icon-png{
+  filter: grayscale(0.7);
+  width: 100%;
+}
+.icon{
+  width: 90px;
+  gap: 30px;
+  display: flex;
+}
 
+#container-icons{
+  display: flex;
+  margin-left: 30px;
+}
 
+#reponse{
+  text-align: center;
+  margin-block: 20%;
+}
 
-
+    /* Media telephone*/
 
 @media (max-width: 767px){
   article{
     margin-inline: 5%;
-    background-color: red;
   }
   .container-1{
     flex-direction: column;
@@ -234,10 +257,15 @@
   ul{
     justify-content: space-evenly;
   }
+  li{
+    font-size: 20px;
+  }
 }
+
+  
+    /* Media tablette*/
 @media (min-width: 768px) and (max-width: 1023px){
   article{
-    background-color: green;
     margin-inline: 13%;
   }
 }
